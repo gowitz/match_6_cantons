@@ -1,0 +1,6 @@
+Fribourg,FR
+Genève,GE
+Jura,JU
+Neuchâtel,NE
+Valais,VS
+Vaud,VD

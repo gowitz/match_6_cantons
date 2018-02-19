@@ -1,0 +1,24 @@
+body {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  background: linear-gradient(rgba(146, 179, 214,1), rgba(146, 179, 214,0));
+
+}
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 30px;
+}
+p {
+  font-size: 14px;
+}
+tr:nth-child(even) {background-color: #91afd7;}
+
+#corps {
+   text-align: center;
+   height:1000px;
+}
+table td.bg {
+  background-color: #6496d2;
+}
