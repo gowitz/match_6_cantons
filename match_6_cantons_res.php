@@ -31,7 +31,7 @@ try{
 	<div id="corps">
 		<div class="card"><img src="images/logo_ana.png" align="top" alt="ANA" height="70" width="82"></div>
 		<h1 align="center">Match des 6 cantons 2018</h1>
-		<h2 align="center">Classement global</h2>
+		<h2 align="center">Classement général</h2>
 
 <table align="center" cellspacing="0" border="0">
 	<colgroup width="142"></colgroup>
@@ -105,17 +105,23 @@ try{
 		<td height="10" align="center"></td>
 		<td height="10" align="center"></td>
 	</tr>
+	<?php
+	$tempTable= $pdo->query('create temp table tt as select canton, sum(pts) as pts from classement group by canton');
+	$rank= $pdo->query('select s.canton, s.pts, (select count(*)+1 FROM tt as r where r.pts > s.pts) AS rank from tt as s');
+	?>
 	<tr>
 		<td class="bg" align="left">Rang</td>
-		<td class="bg" align="center">4</td>
-		<td class="bg" align="center">3</td>
-		<td class="bg" align="center">5</td>
-		<td class="bg" align="center">6</td>
-		<td class="bg" align="center">2</td>
-		<td class="bg" align="center">1</td>
+		<?php
+		foreach ($rank as $row) {
+			print "	<td class=\"bg\" align=\"center\">".$row['rank']."</td>";
+		}
+		?>
 	</tr>
 </table>
 <p>mis à jour à <?php print getFileDateTime($db_filename); ?></p>
 </div>
+<?php
+$dropTempTable = $pdo->query('drop table tt');
+?>
 </body>
 </html>
