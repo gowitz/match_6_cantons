@@ -15,20 +15,50 @@ p {
 }
 tr:nth-child(even) {background-color: #91afd7;}
 
-#corps {
-   text-align: center;
-   height:1000px;
-}
 table td.bg {
   background-color: #6496d2;
 }
 
-table td.bold {
-  font-style: bold;
+time {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 400px;
+  margin-top: 100px;
 }
-div.card {
-    width: 80px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    text-align: center;
-    margin: auto;
+
+* {
+    box-sizing: border-box;
+}
+
+#corps {
+   text-align: center;
+   height:1000px;
+}
+#res table td {
+  height: 30px;
+}
+
+#meteo {
+  margin-top: 100px;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    display: inline-block;
+}
+
+.left, .right {
+  width: 25%;
+}
+
+.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }

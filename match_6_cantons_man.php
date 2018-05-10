@@ -20,6 +20,11 @@ $db_filename = "match_6_cantons.sqlite";
 </head>
 
 <body>
+	<div class="row">
+		<div class="column left">
+			<embed src="http://free.timeanddate.com/clock/i68fmo0n/n1426/szw110/szh110/hoc000/hbw4/cf100/hgr0/fav0/fiv0/mqc000/mqs3/mql25/mqw6/mqd96/mhc000/mhs3/mhl20/mhw6/mhd96/mmc000/mms3/mml10/mmw2/mmd96/hhw16/hmw16/hmr4/hsc000/hss3/hsl90" width="110" height="110"></embed>
+		</div>
+		<div class="column middle">
 	<div id="corps">
 		<div class="card"><img src="images/logo_ana.png" align="top" alt="ANA" height="70" width="82"></div>
 		<h1>Match des 6 cantons 2018</h1>
@@ -36,7 +41,7 @@ $db_filename = "match_6_cantons.sqlite";
 		// Querying
 		$result = $pdo->query('SELECT * FROM resultats_table WHERE categorie LIKE \''.$cat.'\'');
 		?>
-
+<div id="res">
 <table align="center" cellspacing="0" border="0">
 	<colgroup width="142"></colgroup>
 	<colgroup span="6" width="81"></colgroup>
@@ -93,7 +98,10 @@ $db_filename = "match_6_cantons.sqlite";
 			?>
 	</tr>
 </table>
+</div>
 <p>mis à jour à <?php print getFileDateTime($db_filename); ?></p>
+</div>
+<div class="column right" ></div>
 </div>
 </body>
 </html>
