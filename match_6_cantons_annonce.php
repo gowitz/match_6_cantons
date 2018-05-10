@@ -31,8 +31,8 @@ $txt_filename = "annonce.txt";
 		<div id="annonce">
 			<p><?php include($txt_filename); ?></p>
 		</div>
+		<p>mis à jour à <?php print getFileDateTime($txt_filename); ?></p>
 </div>
-<p>mis à jour à <?php print getFileDateTime($txt_filename); ?></p>
 </div>
 <div class="column right" ></div>
 </div>
