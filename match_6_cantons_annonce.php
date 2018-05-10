@@ -5,7 +5,7 @@ function getFileDateTime($filename){
 		return date("j.n.Y H:i", filemtime(dirname(__FILE__).'/'.$filename));
 	}
 }
-$txt_filename = "annonces.txt";
+$txt_filename = "annonce.txt";
 ?>
 <html>
 <head>
@@ -29,7 +29,7 @@ $txt_filename = "annonces.txt";
 		<h1 align="center">Match des 6 cantons 2018</h1>
 		<h2 align="center">Annonces</h2>
 		<div id="annonce">
-			<p><?php include("annonces.txt"); ?></p>
+			<p><?php include($txt_filename); ?></p>
 		</div>
 </div>
 <p>mis à jour à <?php print getFileDateTime($txt_filename); ?></p>
