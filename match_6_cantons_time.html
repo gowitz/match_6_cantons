@@ -27,6 +27,9 @@
 		var currentdate = new Date();
 		var heure = currentdate.getHours();
 		var minute = currentdate.getMinutes();
+		if (heure < 10) {
+			heure = "0" + heure
+		}
 		if (minute < 10) {
 			minute = "0" + minute
 		}
