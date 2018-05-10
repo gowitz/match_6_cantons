@@ -13,7 +13,14 @@ h2 {
 p {
   font-size: 14px;
 }
-tr:nth-child(even) {background-color: #91afd7;}
+
+table tr:nth-child(odd) td{
+  background-color: #91afd7;
+}
+table tr:nth-child(even) td{
+}
+
+
 
 table td.bg {
   background-color: #6496d2;
