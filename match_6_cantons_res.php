@@ -42,13 +42,13 @@ try{
 	<colgroup width="142"></colgroup>
 	<colgroup span="6" width="81"></colgroup>
 	<tr>
-		<td align="center" class="bg"></td>
-		<td align="center" class="bg">Fribourg</td>
-		<td align="center" class="bg">Genève</td>
-		<td align="center" class="bg">Jura</td>
-		<td align="center" class="bg">Neuchâtel</td>
-		<td align="center" class="bg">Valais</td>
-		<td align="center" class="bg">Vaud</td>
+		<th align="center" class="bg"></th>
+		<th align="center" class="bg">Fribourg</th>
+		<th align="center" class="bg">Genève</th>
+		<th align="center" class="bg">Jura</th>
+		<th align="center" class="bg">Neuchâtel</th>
+		<th align="center" class="bg">Valais</th>
+		<th align="center" class="bg">Vaud</th>
 	</tr>
 	<tr>
 		<td align="center" height="50" class="bg"></td>

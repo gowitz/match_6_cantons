@@ -18,7 +18,7 @@
 		</div>
 		<div class="column middle">
 	<div id="corps">
-		<p><img src="logo_ana.png" align="top" alt="ANA" height="70" width="82"></p>
+		<p><img src="images/logo_ana.png" align="top" alt="ANA" height="70" width="82"></p>
 		<h1 align="center">Match des 6 cantons 2018</h1>
 		<h2 align="center"></h2>
 
@@ -28,10 +28,10 @@
 		var heure = currentdate.getHours();
 		var minute = currentdate.getMinutes();
 		if (heure < 10) {
-			heure = "0" + heure
+			heure = "0" + heure;
 		}
 		if (minute < 10) {
-			minute = "0" + minute
+			minute = "0" + minute;
 		}
 		var datetime = heure + ":" + minute;
 		document.write(datetime);
