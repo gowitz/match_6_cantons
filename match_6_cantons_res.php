@@ -84,13 +84,13 @@ try{
 					?>
 			</tr>
 	<tr>
-		<td height="10" align="center"></td>
-		<td height="10" align="center"></td>
-		<td height="10" align="center"></td>
-		<td height="10" align="center"></td>
-		<td height="10" align="center"></td>
-		<td height="10" align="center"></td>
-		<td height="10" align="center"></td>
+		<td class="bg" height="10" align="center"></td>
+		<td class="bg" height="10" align="center"></td>
+		<td class="bg" height="10" align="center"></td>
+		<td class="bg" height="10" align="center"></td>
+		<td class="bg" height="10" align="center"></td>
+		<td class="bg" height="10" align="center"></td>
+		<td class="bg" height="10" align="center"></td>
 	</tr>
 	<tr>
 		<td class="bg" align="left">Totaux</td>
@@ -102,13 +102,13 @@ try{
 		?>
 	</tr>
 	<tr>
-		<td height="10" align="center"></td>
-		<td height="10" align="center"></td>
-		<td height="10" align="center"></td>
-		<td height="10" align="center"></td>
-		<td height="10" align="center"></td>
-		<td height="10" align="center"></td>
-		<td height="10" align="center"></td>
+		<td class="bg" height="10" align="center"></td>
+		<td class="bg" height="10" align="center"></td>
+		<td class="bg" height="10" align="center"></td>
+		<td class="bg" height="10" align="center"></td>
+		<td class="bg" height="10" align="center"></td>
+		<td class="bg" height="10" align="center"></td>
+		<td class="bg" height="10" align="center"></td>
 	</tr>
 	<?php
 	$tempTable= $pdo->query('create temp table tt as select canton, sum(pts) as pts from classement group by canton');
