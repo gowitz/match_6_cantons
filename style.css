@@ -50,6 +50,10 @@ time {
   margin-top: 100px;
 }
 
+#annonce {
+  font-size: 25px;
+}
+
 /* Create three unequal columns that floats next to each other */
 .column {
     float: left;
