@@ -20,7 +20,9 @@ table tr:nth-child(odd) td{
 table tr:nth-child(even) td{
 }
 
-
+table th.bg {
+  background-color: #6496d2;
+}
 
 table td.bg {
   background-color: #6496d2;
