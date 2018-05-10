@@ -1,5 +1,5 @@
 L'Association Neuchâteloise d'Athlétisme vous souhaite la bienvenue à Colombier.
-<br /><br /><br />
-<span class="blink_me">Début des concours à 12:00</span>
+<br /><hr /><br />
+<p><span class="blink_me">Début des concours à 12:00</span>
 <br /><br /><br />
 Bonne journée à tous.
