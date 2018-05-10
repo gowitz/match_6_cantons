@@ -29,10 +29,10 @@ $txt_filename = "annonces.txt";
 		<h1 align="center">Match des 6 cantons 2018</h1>
 		<h2 align="center">Annonces</h2>
 		<div id="annonce">
-			<p><?php include($txt_filename); ?></p>
+			<p><?php include("annonces.txt"); ?></p>
 		</div>
 </div>
-<p>mis à jour à <?php print getFileDateTime($db_filename); ?></p>
+<p>mis à jour à <?php print getFileDateTime($txt_filename); ?></p>
 </div>
 <div class="column right" ></div>
 </div>

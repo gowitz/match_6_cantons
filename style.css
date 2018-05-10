@@ -75,3 +75,17 @@ time {
     display: table;
     clear: both;
 }
+
+.blink_me {
+  animation: blinker 2s linear infinite;
+}
+
+.red {
+  color: #FF0000;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
