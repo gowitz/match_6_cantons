@@ -15,13 +15,14 @@
 	<div class="row">
 		<div class="column left">
 			<?php include("clock.html"); ?>
+		</div>
 		<div class="column middle">
 	<div id="corps">
 		<p><img src="images/logo_ana.png" align="top" alt="ANA" height="70" width="82"></p>
 		<h1 align="center">Match des 6 cantons 2018</h1>
 		<h2 align="center">Météo</h2>
 		<div id="meteo">
-			<img src="https://www.prevision-meteo.ch/uploads/widget/colombier-ne_0.png" width="800" />
+			<img src="images/colombier-ne_0.png" width="800" />
 		</div>
 
 </div>

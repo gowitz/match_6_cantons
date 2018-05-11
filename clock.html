@@ -1,14 +1,76 @@
-<div id="chart1"></div>
-<script src="d3.min.js" charset="utf-8"></script>
-<script src="d3clock.js"></script>
-<script>
-		d3clock({
-			target:'#chart1',
-			face:'sbb',
-			width:500,
-			// date:'Mon May 25 2015 10:09:37',
-			TZOffset:{
-				hours:0
+<!doctype html>
+<html>
+<head>
+<link href="fonts.css" rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<div id="myclock"></div>
+
+<script language="javascript" type="text/javascript" src="jquery-latest.min.js"></script>
+<script language="javascript" type="text/javascript" src="jquery.thooClock.js"></script>
+<script language="javascript">
+	var intVal, myclock;
+
+	$(window).resize(function(){
+		window.location.reload()
+	});
+
+	$(document).ready(function(){
+
+
+
+		//clock plugin constructor
+		$('#myclock').thooClock({
+			//size:$(document).height()/5,
+			size:200,
+			onAlarm:function(){
+				//all that happens onAlarm
+				$('#alarm1').show();
+				alarmBackground(0);
+				//audio element just for alarm sound
+				document.body.appendChild(audioElement);
+				var canPlayType = audioElement.canPlayType("audio/ogg");
+				if(canPlayType.match(/maybe|probably/i)) {
+					audioElement.src = 'alarm.ogg';
+				} else {
+					audioElement.src = 'alarm.mp3';
+				}
+				// erst abspielen wenn genug vom mp3 geladen wurde
+				audioElement.addEventListener('canplay', function() {
+					audioElement.loop = true;
+					audioElement.play();
+				}, false);
+			},
+			showNumerals:true,
+			brandText:'THOOYORK',
+			brandText2:'Germany',
+			onEverySecond:function(){
+				//callback that should be fired every second
+			},
+			//alarmTime:'15:10',
+			offAlarm:function(){
+				$('#alarm1').hide();
+				audioElement.pause();
+				clearTimeout(intVal);
+				$('body').css('background-color','#FCFCFC');
 			}
 		});
+
+	});
+
+
+
+	$('#turnOffAlarm').click(function(){
+		$.fn.thooClock.clearAlarm();
+	});
+
+
+	$('#set').click(function(){
+		var inp = $('#altime').val();
+		$.fn.thooClock.setAlarm(inp);
+	});
+
 </script>
+</body>
+</html>
