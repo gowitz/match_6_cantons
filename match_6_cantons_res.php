@@ -20,7 +20,7 @@ try{
 <head>
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-	<meta http-equiv="refresh" content="10; url=match_6_cantons_horaire.html" />
+	<meta http-equiv="refresh" content="10; url=match_6_cantons_horaire.php" />
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Match des 6 cantons 2018</title>
 	<link rel="icon" type="image/png" href="ana_icon.png">
