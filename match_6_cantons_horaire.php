@@ -14,7 +14,7 @@
 <body>
 	<div class="row">
 		<div class="column left">
-			<embed src="http://free.timeanddate.com/clock/i68fmo0n/n1426/szw110/szh110/hoc000/hbw4/cf100/hgr0/fav0/fiv0/mqc000/mqs3/mql25/mqw6/mqd96/mhc000/mhs3/mhl20/mhw6/mhd96/mmc000/mms3/mml10/mmw2/mmd96/hhw16/hmw16/hmr4/hsc000/hss3/hsl90" width="110" height="110"></embed>
+			<?php include("clock.html"); ?>
 		</div>
 		<div class="column middle">
 	<div id="corps">
